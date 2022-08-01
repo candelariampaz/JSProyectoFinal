@@ -1,0 +1,32 @@
+.encabezado_logo{width: $w80px;}
+.navbar{box-sizing: border-box;
+margin: auto}
+
+.nav-link{
+	font-size: $textl;
+	font-weight: $textWeight1;
+	display: inline-block;
+  position: relative;
+  color: $mainColor-75}
+
+.nav-link:after {
+  	content: '';
+  	position: absolute;
+  	width: 100%;
+  	transform: scaleX(0);
+  	height: 2px;
+  	bottom: 0;
+  	left: 0;
+  	background-color: $mainColor-75;
+ 	transform-origin: bottom right;
+  	transition: transform 0.25s ease-out;
+}
+
+.nav-link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.nav-now{font-weight: $textWeight2}
+
+.navbar{background-color: $mainColor-50}
